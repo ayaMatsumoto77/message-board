@@ -7,14 +7,14 @@
     
     <div class="row">
         <div class="col-6">
-            {!! Form::model($message, ["route" => ["messages.update", $message->id]], "method" => "put"]} !!}
+            {!! Form::model($message, ["route" => ["messages.update", $message->id], "method" => "put"]) !!}
             
             <div class="form-group">
-                {!! From::label("content", "メッセージ:") !!}
-                {!! From::text("content", null ["class" => "form-control"]) !!}
+                {!! Form::label("content", "メッセージ:") !!}
+                {!! Form::text("content", null, ["class" => "form-control"]) !!}
             </div>
             
-            {!! Form:submit("更新", ["class" => "btn btn-light"]) !!}
+            {!! Form::submit("更新", ["class" => "btn btn-light"]) !!}
             
             {!! Form::close() !!}
         </div>
