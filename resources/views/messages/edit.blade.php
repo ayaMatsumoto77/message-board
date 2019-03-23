@@ -3,6 +3,7 @@
 
     @section("content")
     
+    
     <h1>id: {{ $message->id }} のメッセージ編集ページ</h1>
     
     <div class="row">
